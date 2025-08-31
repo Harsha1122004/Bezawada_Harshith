@@ -15,8 +15,8 @@ const projects = [
     description:
       "A centralized platform for managing PhD applications, research progress, and academic collaboration efficiently.",
     image: portalImage, // Use the imported image variable
-    liveLink: "#",
-    githubLink: "https://phdportal.vercel.app/",
+    liveLink: "https://phdportal.vercel.app/",
+    githubLink: "https://github.com/Harsha1122004/PhD-Student-Portal",
   },
   {
     id: 2,
