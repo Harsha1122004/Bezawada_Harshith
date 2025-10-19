@@ -5,8 +5,10 @@ import "../styles/Projects.css";
 // Import your images directly from the assets folder with correct filenames
 import elearningImage from "../assets/E-learning.jpg";
 import gamingImage from "../assets/Gaming.jpg";
-import portalImage from "../assets/Portal .png"; // Note the space in the filename
+import portalImage from "../assets/Portal .png"; // Make sure filename matches exactly
 import profileImage from "../assets/profile.jpg";
+import aiCrImage from "../assets/ai-cir.webp";
+import imgAiImage from "../assets/img-ai.jpeg";
 
 const projects = [
   {
@@ -14,38 +16,58 @@ const projects = [
     title: "PHD Student Portal",
     description:
       "A centralized platform for managing PhD applications, research progress, and academic collaboration efficiently.",
-    image: portalImage, // Use the imported image variable
+    image: portalImage,
     liveLink: "https://phdportal.vercel.app/",
     githubLink: "https://github.com/Harsha1122004/PhD-Student-Portal",
   },
   {
     id: 2,
-    title: "E-learning Platform",
+    title: "Student Counselling & Wellbeing AI",
     description:
-      "An interactive online platform for learning, skill development, and course management.With Both Student and Faculty Login .",
-    image: elearningImage, // Use the imported image variable
-    liveLink: "#",
-    githubLink: "#",
+      "Student Counselling & Wellbeing AI is an intelligent support platform designed to assist students in managing their mental health, emotional wellness, and academic stress.",
+    image: imgAiImage,
+    liveLink: "https://mindcure-student.vercel.app/",
+    githubLink: "https://github.com/Harsha1122004/mindcure-student",
   },
   {
     id: 3,
-    title: "Gaming Commmunity",
+    title: "Gaming Community",
     description:
       "An example Frontend Project using HTML, CSS, and JavaScript to create a gaming community website.",
-    image: gamingImage, // Use the imported image variable
+    image: gamingImage,
     liveLink: "https://harsha1122004.github.io/Gaming-community/",
     githubLink:
       "https://github.com/Harsha1122004/Gaming-community/settings/pages",
   },
-  // {
-  //   id: 4,
-  //   title: "Project 4 Title",
-  //   description:
-  //     "A data visualization project using PowerBI to analyze large datasets and generate interactive reports.",
-  //   image: imahgeNone, // Using the profile image as a placeholder
-  //   liveLink: "#",
-  //   githubLink: "#",
-  // },
+  {
+    id: 4,
+    title: "E-learning Platform",
+    description:
+      "An interactive online platform for learning, skill development, and course management. With both Student and Faculty Login.",
+    image: elearningImage,
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    id: 5,
+    title: "AI Curriculum Generator",
+    description:
+      "AI Curriculum is an interactive web platform designed to simplify and personalize the journey of learning Artificial Intelligence.",
+    image: aiCrImage,
+    liveLink: "https://ai-curriculum-tau.vercel.app/",
+    githubLink: "https://github.com/Harsha1122004/ai-curriculum",
+  },
+  // Optional - Future Project
+  /*
+  {
+    id: 6,
+    title: "Job Application Automation Agent",
+    description: "An AI agent that automatically applies to relevant jobs based on your resume and preferences.",
+    image: profileImage,
+    liveLink: "https://projectgalaxy.vercel.app/",
+    githubLink: "https://github.com/Harsha1122004/project-galaxy",
+  },
+  */
 ];
 
 const Projects = () => {
