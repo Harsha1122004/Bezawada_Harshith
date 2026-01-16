@@ -1,0 +1,55 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 7%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+/* LOGO */
+.nav-logo {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* CENTER LINKS */
+.nav-links {
+  justify-self: center;
+  display: flex;
+  gap: 36px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* SOCIAL ICONS */
+.nav-socials {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-socials a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.nav-socials a:hover {
+  color: #b30000;
+  transform: translateY(-2px);
+}
