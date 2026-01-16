@@ -33,7 +33,6 @@ const Home = () => {
       <section className="hero motion-enter">
         <div className="hero-bg-text">
           <span className="main-text">I BUILD IN THE SHADOWS</span>
-          <span className="sub-text">I AM VENGEANCE</span>
         </div>
 
         <div className="hero-image">
@@ -42,9 +41,7 @@ const Home = () => {
 
         <div className="hero-foreground">
           <p className="hero-name">HARSHITH BEZAWADA</p>
-          <p className="hero-role">
-            Full Stack Developer • MERN • Cloud • AI
-          </p>
+          <p className="hero-role">Full Stack Developer • MERN • Cloud • AI</p>
 
           <div className="hero-actions">
             <a
