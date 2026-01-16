@@ -10,9 +10,9 @@ const skills = [
   { name: "Flutter", level: 80 },
   { name: "SQL", level: 95 },
   { name: "AWS", level: 70 },
-  { name: "Git/Github", level: 93 },
+  { name: "Git/Github", level: 95 },
   { name: "PowerBI", level: 70 },
-  { name: "Firebase", level: 88 },
+  { name: "Firebase", level: 95 },
 ];
 
 const About = () => {
@@ -43,7 +43,6 @@ const About = () => {
       <Navbar />
 
       <div className="about-page">
-        {/* ABOUT SECTION */}
         <section className="about-hero">
           <div className="about-image">
             <img src={aboutImage} alt="Harshith Bezawada" />
@@ -52,18 +51,16 @@ const About = () => {
           <div className="about-content">
             <h1>ABOUT ME</h1>
             <p>
-              I am a Full Stack Developer specializing in MERN stack, cloud
-              platforms, and scalable application development with a strong
-              focus on performance and clean architecture.
+              I am a Full Stack Developer specializing in MERN stack,
+              cloud, scalable application development and cinematic UI.
             </p>
             <p>
-              I build systems that are efficient, secure, and visually refined —
+              I build efficient, secure and visually intentional experiences —
               where every line of code serves a purpose.
             </p>
           </div>
         </section>
 
-        {/* SKILLS SECTION */}
         <section className="skills-section">
           <h2>MY SKILLS</h2>
 

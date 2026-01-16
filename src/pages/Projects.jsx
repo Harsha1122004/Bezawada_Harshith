@@ -2,29 +2,28 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "../styles/Projects.css";
 
-// Import your images directly from the assets folder with correct filenames
+// Images
 import elearningImage from "../assets/E-learning.jpg";
 import gamingImage from "../assets/Gaming.jpg";
-import portalImage from "../assets/Portal .png"; // Make sure filename matches exactly
-import profileImage from "../assets/profile.png";
+import portalImage from "../assets/Portal .png";
 import aiCrImage from "../assets/ai-cir.webp";
 import imgAiImage from "../assets/img-ai.jpeg";
 
 const projects = [
   {
     id: 1,
-    title: "PHD Student Portal",
+    title: "PhD Student Portal",
     description:
-      "A centralized platform for managing PhD applications, research progress, and academic collaboration efficiently.",
+      "A centralized MERN-based platform for managing PhD applications, research tracking, and academic collaboration.",
     image: portalImage,
     liveLink: "https://phdportal.vercel.app/",
     githubLink: "https://github.com/Harsha1122004/PhD-Student-Portal",
   },
   {
     id: 2,
-    title: "Student Counselling & Wellbeing AI",
+    title: "Student Wellbeing AI",
     description:
-      "Student Counselling & Wellbeing AI is an intelligent support platform designed to assist students in managing their mental health, emotional wellness, and academic stress.",
+      "An AI-powered platform that supports student mental health using sentiment analysis and intelligent feedback.",
     image: imgAiImage,
     liveLink: "https://mindcure-student.vercel.app/",
     githubLink: "https://github.com/Harsha1122004/mindcure-student",
@@ -33,17 +32,16 @@ const projects = [
     id: 3,
     title: "Gaming Community",
     description:
-      "An example Frontend Project using HTML, CSS, and JavaScript to create a gaming community website.",
+      "A frontend gaming community website built using HTML, CSS, and JavaScript.",
     image: gamingImage,
     liveLink: "https://harsha1122004.github.io/Gaming-community/",
-    githubLink:
-      "https://github.com/Harsha1122004/Gaming-community/settings/pages",
+    githubLink: "https://github.com/Harsha1122004/Gaming-community",
   },
   {
     id: 4,
     title: "E-learning Platform",
     description:
-      "An interactive online platform for learning, skill development, and course management. With both Student and Faculty Login.",
+      "An interactive learning platform with structured courses, progress tracking, and responsive design.",
     image: elearningImage,
     liveLink: "#",
     githubLink: "#",
@@ -52,31 +50,22 @@ const projects = [
     id: 5,
     title: "AI Curriculum Generator",
     description:
-      "AI Curriculum is an interactive web platform designed to simplify and personalize the journey of learning Artificial Intelligence.",
+      "An AI-driven curriculum generation platform that personalizes learning pathways for AI aspirants.",
     image: aiCrImage,
     liveLink: "https://ai-curriculum-tau.vercel.app/",
     githubLink: "https://github.com/Harsha1122004/ai-curriculum",
   },
-  // Optional - Future Project
-  /*
-  {
-    id: 6,
-    title: "Job Application Automation Agent",
-    description: "An AI agent that automatically applies to relevant jobs based on your resume and preferences.",
-    image: profileImage,
-    liveLink: "https://projectgalaxy.vercel.app/",
-    githubLink: "https://github.com/Harsha1122004/project-galaxy",
-  },
-  */
 ];
 
 const Projects = () => {
   return (
-    <div>
+    <>
       <Navbar />
+
       <div className="projects-page-container">
         <section className="projects-section">
           <h2>Projects</h2>
+
           <div className="projects-grid">
             {projects.map((project) => (
               <div className="project-card" key={project.id}>
@@ -85,22 +74,24 @@ const Projects = () => {
                   alt={project.title}
                   className="project-image"
                 />
+
                 <div className="project-info">
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-description">{project.description}</p>
+
                   <div className="project-links">
                     <a
                       href={project.liveLink}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noreferrer"
                       className="project-link"
                     >
-                      Live Demo
+                      Live
                     </a>
                     <a
                       href={project.githubLink}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noreferrer"
                       className="project-link"
                     >
                       GitHub
@@ -112,7 +103,7 @@ const Projects = () => {
           </div>
         </section>
       </div>
-    </div>
+    </>
   );
 };
 

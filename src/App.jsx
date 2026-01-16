@@ -15,7 +15,7 @@ function App() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // ⏱️ 2 seconds
+    }, 2000); // 2 seconds loader
 
     return () => clearTimeout(timer);
   }, [location.pathname]);
@@ -24,13 +24,13 @@ function App() {
     <>
       <PageLoader show={loading} />
 
-      <div style={{ visibility: loading ? "hidden" : "visible" }}>
+      {!loading && (
         <Routes location={location}>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
-      </div>
+      )}
     </>
   );
 }
