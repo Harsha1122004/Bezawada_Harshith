@@ -387,3 +387,28 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 0 5%;
+    margin-bottom: 80px;
+  }
+
+  .about-content h1 {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image img {
+    max-width: 260px;
+  }
+
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+}

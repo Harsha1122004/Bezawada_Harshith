@@ -1,5 +1,8 @@
+*{
+  font-family: "Oswald", sans-serif;
+}
 .navbar {
-<<<<<<< HEAD
+
   position: fixed;
   top: 0;
   width: 100%;
@@ -54,8 +57,7 @@
   color: #b30000;
   transform: translateY(-2px);
 }
-=======
-  display: flex;
+.navbar {  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
@@ -123,4 +125,37 @@
   color: #fff;
   cursor: pointer;
 }
->>>>>>> 34c17b8d38c8ca10f0c1f699257e1a187e1e4bd2
+/* ===== MOBILE NAVBAR FIX ===== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 5%;
+    height: auto;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 4%;
+  }
+
+  .nav-links {
+    display: flex;          /* 🔥 SHOW LINKS AGAIN */
+    gap: 18px;
+  }
+
+  .nav-socials {
+    gap: 14px;
+  }
+}

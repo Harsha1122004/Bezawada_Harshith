@@ -45,7 +45,7 @@
 /* GRID */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
 }
 
@@ -124,5 +124,18 @@
 
   .project-image {
     height: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .projects-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-links {
+    flex-direction: column;
   }
 }

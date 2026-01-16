@@ -45,7 +45,7 @@ const Home = () => {
 
           <div className="hero-actions">
             <a
-              href="https://drive.google.com/"
+              href="https://drive.google.com/file/d/1yGlyyWPQROPgv65eIyspo5jKGNsY8jEi/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
