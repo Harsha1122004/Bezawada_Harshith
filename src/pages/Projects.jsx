@@ -16,7 +16,7 @@ const projects = [
     description:
       "A centralized MERN-based platform for managing PhD applications, research tracking, and academic collaboration.",
     image: portalImage,
-    liveLink: "https://phdportal.vercel.app/",
+    liveLink: "https://phd-student-portal.onrender.com/",
     githubLink: "https://github.com/Harsha1122004/PhD-Student-Portal",
   },
   {
